@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  juan-jaramillo-api-endpoints:
+    image: juanjaragavi/juan-jaramillo-api-endpoints:latest
+    container_name: juan-jaramillo-api-endpoints
+    ports:
+      - "5000:5000"
+    volumes:
+      - juan-jaramillo-api-storage:/app/data
+
+volumes:
+  juan-jaramillo-api-storage:
